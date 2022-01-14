@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    font-family: 'Ubuntu';
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: #767B80;
+    color: white;
+
+}
+nav ul li{
+    padding: 0 12px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 45px;
+    padding-right: 12px;
+}
+
+#clockcontainer{
+  width: 50vh;
+  height: 50vh;
+  background: url(clock.png) no-repeat;
+  background-size: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#hour{
+  
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  height: 14vh;
+  width: 1vh;
+  top: 11.5vh;
+  left: 24.5vh;
+  z-index: 3;
+  transform-origin: bottom;
+}
+#minute{
+
+  position: absolute;
+
+  background: black;
+  border-radius: 10px;
+  height: 17vh;
+
+  width: 1vh;
+transform-origin: bottom;
+  top: 8.5vh;
+  left: 24.5vh;
+  z-index: 2;
+}
+
+#second{
+
+height: 20vh;
+
+  width: 1vh;
+  transform-origin: bottom;
+  top: 5.5vh;
+  left: 24.5vh;
+  position: absolute;
+
+  background: black;
+  border-radius: 10px;
+  z-index: 1;
+}
+#digiclock{
+  width: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10vh;
+}
+
+#hr , #mn , #sc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  font-size: 3em;
+  font-weight: bolder;
+}
+#ampm, #colm, #coln{
+   font-size: 3em;
+
+  font-weight: bolder;
+}
